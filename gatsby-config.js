@@ -16,10 +16,10 @@ module.exports = {
       resolve: 'gatsby-source-kentico-cloud',
       options: {
         deliveryClientConfig: {
-          projectId: '65dafdc3-095a-00f6-76bb-3195d433e992',
+          projectId: `c1e58c74-a9f7-0130-3b7f-8282cd6ab908`,
           typeResolvers: [],
         },
-        languageCodenames: ['default'],
+        languageCodenames: ['default', 'cz'],
       },
     },
   ],

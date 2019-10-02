@@ -12,7 +12,8 @@ Create dashboards and administration tools in Gastby using [Material UI's](https
 
     ```sh
     cd cloud-sample-app-intranet-gatsby
-    gatsby develop
+    yarn
+    yarn start
     ```
 
 1. **Open the source code and start editing!**

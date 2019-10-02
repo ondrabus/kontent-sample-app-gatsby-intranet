@@ -18,7 +18,11 @@ function EmployeeList() {
       query={graphql`
         query peoplePortalList {
           allKenticoCloudItemPerson(
-            filter: { elements: { list_in_portal: { value: { elemMatch: { codename: { eq: "yes" } } } } } }
+            filter: {
+              elements: { list_in_portal: { value: { elemMatch: { codename: { eq: "yes" } } } } }
+              system: { language: { eq: "default" } }
+              preferred_language: { eq: "default" }
+            }
           ) {
             nodes {
               elements {

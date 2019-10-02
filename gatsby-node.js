@@ -22,7 +22,7 @@ exports.onCreateWebpackConfig = ({ actions, stage }) => {
 
 exports.onCreateNode = ({ node, actions: { createNodeField } }) => {
   if (node.internal.type === 'KenticoCloudItemPerson') {
-    const hasNotes = node.elements.pinned_notes.value.length > 0;
+    const hasNotes = node.elements.pinned_notes.itemCodenames.length > 0;
     createNodeField({
       node,
       name: `hasNotes`,
